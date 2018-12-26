@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>discovr – a Travel Agency</title>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="a Travel Agency Landing Page">
+  <meta name="keywords" content="Travel, Agency, Landing Page">
+  <meta name="author" content="Morchid Chellali">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/nav.css" rel="stylesheet" type="text/css">
+  <link href="css/top.css" rel="stylesheet" type="text/css">
+  <link href="css/about.css" rel="stylesheet" type="text/css">
+  <link href="css/testimonials.css" rel="stylesheet" type="text/css">
+  <link href="css/services.css" rel="stylesheet" type="text/css">
+  <link href="css/contact.css" rel="stylesheet" type="text/css">
+  <link href="css/footer.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <nav id="navbar" class="h-flex">
+      <div id="collapse" class="h-flex">
+        <div id="logo">
+          <a href="#top" id="logo-a" class="fake-link" onclick="hideMenu()">dscvr.</a>
+        </div>
+        <div id="menu-toggle" class="v-flex" onclick="menuToggle()">
+          <div id="bar1" class="bars"></div>
+          <div id="bar2" class="bars"></div>
+        </div>
+      </div>
+      <div id="nav-links" class="v-flex hide">
+        <ul class="h-flex fake-list links">
+          <li><a href="#about" class="nav-link fake-link" onclick="hideMenu()">about</a></li>
+          <li><a href="#testimonials" class="nav-link fake-link" onclick="hideMenu()">testimonials</a></li>
+          <li><a href="#services" class="nav-link fake-link" onclick="hideMenu()">services</a></li>
+          <li><a href="#contact" class="fake-link" id="contact-btn" onclick="hideMenu()">contact</a></li>
+        </ul>
+        <ul class="fake-list h-flex external-links">
+          <li><a href="https://www.instagram.com" class="fake-link" target="_blank"><i class="fab 5x fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com" class="fake-link" target="_blank"><i class="fab 5x fa-facebook-f"></i></a></li>
+          <li><a href="https://www.twitter.com" class="fake-link" target="_blank"><i class="fab 5x fa-twitter"></i></a></li>
+          <li><a href="https://www.pinterest.com" class="fake-link" target="_blank"><i class="fab 5x fa-pinterest"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="top" class="v-flex">
+    <a href="#about" class="fake-link">
+      <div id="slogan">pack up. we cover the rest.</div>
+    </a>
+  </div>
+  <div id="about" class="h-flex">
+    <div id="content" class="v-flex">
+      <h1>DISCOVER</h1>
+      <p>A Travel Agency devoted to get you out of your comfort zone.<br><br> Whether you want to climb the Everest, or
+        you want to explore an island, we insure all aspects of your adventure. We also make sure to group you with
+        like minded people to make
+        friends and enjoy your trip.<br><br> You're on budget? No worries. We seek the most with the least.<br><br><br>
+        Enough with talking, find out below how we did in the previous adventures.</p>
+      <a href="#testimonials" class="fake-link">testimonials<i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div id="img">
+      <div id="wrapper"></div>
+    </div>
+  </div>
+  <div id="testimonials" class="v-flex">
+    <div id="testimonial-container" class="v-flex">
+      <ul class="carousel fake-list">
+        <li class="current">
+          <div class="testimonial h-flex">
+            <div class="photograph" style='background-image: url("https://images.unsplash.com/photo-1522724709546-19901cb1818a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80")'></div>
+            <div class="content v-flex">
+              <h1>Chris Navis</h1>
+              <h3>Malibu, California</h3>
+              <p>"It was a truly beautiful trip. I did all what I desired so much to do! Definitely looking forward to
+                go somewhere else with you!"</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="testimonial h-flex">
+            <div class="photograph" style='background-image: url("https://images.unsplash.com/photo-1543229911-33d91d9dee5a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")'></div>
+            <div class="content v-flex">
+              <h1>Joey & Jesse Bay</h1>
+              <h3>Senja Island, Norway</h3>
+              <p>"Perfect, is how we describe our adventure. It was a blessing to have you by our side. We could not
+                ask for more! Very happy with your service!"</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="testimonial h-flex">
+            <div class="photograph" style='background-image: url("https://images.unsplash.com/photo-1541647376583-8934aaf3448a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80")'></div>
+            <div class="content v-flex">
+              <h1>Max Givard</h1>
+              <h3>Bora Bora, French Polynesia</h3>
+              <p>"What an awesome trip. I mean the whole experience was amazing. I made new friends! *I'm an introvert*
+                I learned how to surf! It was embarassing to fall the first hundred times but it was super fun! Thank
+                you guys."</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="testimonial h-flex">
+            <div class="photograph" style='background-image: url("https://images.unsplash.com/photo-1544501616-6c71ff5438ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80")'></div>
+            <div class="content v-flex">
+              <h1>George Samuel</h1>
+              <h3>Tokyo, Japan</h3>
+              <p>"Japan was always a fascinating country to me. I finally got the chance to see the culture with my own
+                eyes. And what a great service I got from you. I'm so grateful!"</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="buttons">
+        <button id="prev"><i class="fas fa-caret-left"></i></button>
+        <button id="next"><i class="fas fa-caret-right"></i></button>
+      </div>
+      <a href="#services" class="services-a fake-link"><i class="fas fa-arrow-down"></i>services</a>
+    </div>
+  </div>
+  <div id="services" class="v-flex">
+    <div class="wrapper">
+      <div class="service h-flex" style="background-image: url('https://images.unsplash.com/photo-1484544808355-8ec84e534d75?ixlib=rb-1.2.1&auto=format&fit=crop&w=1366&q=80'); background-size: cover">
+        <div class="s-wrapper">
+          <h1>Destination</h1>
+          <p><span style="padding-right: 10px;"></span>We are ready to explore with you, excited to head to wherever
+            you
+            desire. Islands, beaches, woods, mountains,
+            or [insert anything here].<br><br><span style="padding-right: 10px;"></span>Let us worry about how we would
+            land you in there. We try our best to give
+            you as many options as possible, each with its cost and discomfort intensity.</p>
+        </div>
+      </div>
+      <div class="service h-flex" style="background-image: url('https://images.unsplash.com/photo-1510917181191-85abe24b5300?ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80'); background-size: cover">
+        <div class="s-wrapper">
+          <h1>Planning</h1>
+          <p><span style="padding-right: 10px;"></span>Help us organize your trip so that you would get the most of it.
+            Give us some insights from your perspective.
+            What you want to accomplish once you're there?<br><br><span style="padding-right: 10px;"></span>We invite
+            you
+            to take a coffee, and talk all about it
+            with our team.</p>
+        </div>
+      </div>
+      <div class="service h-flex" style="background-image: url('https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80'); background-size: cover">
+        <div class="s-wrapper">
+          <h1>Accomodations & Meals</h1>
+          <p><span style="padding-right: 10px;"></span>Based on your budget and your preferences, we'll help your find
+            a
+            place that suits you. Whether it be in the
+            woods, on the beach, or elsewhere. And a meal of your desire.</p>
+        </div>
+      </div>
+      <div class="service h-flex" style="background-image: url('https://images.unsplash.com/photo-1536584754829-12214d404f32?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover">
+        <div class="s-wrapper">
+          <h1>Packing</h1>
+          <p><span style="padding-right: 10px;"></span>We provide all the necessary eventual gadgets during the
+            adventure. Take advice from our advisors to pack up,
+            in order to focus more on your trip.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact" class="v-flex">
+    <div id="form-container" class="v-flex">
+      <form id="form" class="v-flex">
+        <h2>Get in touch!</h2>
+        <input type="text" id="name" placeholder="First Name" autocomplete="off" required>
+        <input type="email" id="email" placeholder="Email" name="email" required>
+        <textarea placeholder="Tell us about your trip!" type="textarea" rows="5" id="comment"></textarea>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  <footer class="v-flex">
+    <div id="f-wrapper" class="h-flex">
+      <div class="bottom-links v-flex">
+        <ul class="fake-list">
+          <li><a href="#top" class="fake-link">scroll to the top</a></li>
+          <li><a href="#about" class="fake-link">about</a></li>
+          <li><a href="#testimonials" class="fake-link">testimonials</a></li>
+          <li><a href="#services" class="fake-link">services</a></li>
+        </ul>
+      </div>
+      <div class="social-media v-flex">
+        <p>find us on social medias</p>
+        <ul class="fake-list h-flex">
+          <li><a href="https://www.instagram.com" class="fake-link" target="_blank"><i class="fab 5x fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com" class="fake-link" target="_blank"><i class="fab 5x fa-facebook-f"></i></a></li>
+          <li><a href="https://www.twitter.com" class="fake-link" target="_blank"><i class="fab 5x fa-twitter"></i></a></li>
+          <li><a href="https://www.pinterest.com" class="fake-link" target="_blank"><i class="fab 5x fa-pinterest"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <p id="copyright">copyright © 2018 — dscvr.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>

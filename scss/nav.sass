@@ -1,0 +1,111 @@
+@import useful-classes
+
+.hide
+  @media screen and (max-width: $notebook-breakpoint)
+    transform: translateX(100vw)
+
+.theme
+  background: rgba(255, 255, 255, 0.9)
+
+.change #bar1
+  transform: rotate(45deg) translate(0px, 9px)
+
+.change #bar2
+  transform: rotate(-45deg) translate(0px, -9px)
+
+#navbar
+  width: 100%
+  height: 80px
+  position: fixed
+  padding: 10px 30px
+  z-index: 3
+
+  #collapse
+    width: 100%
+
+  #logo-a
+    font-size: 24pt
+
+  #logo-a:hover
+    color: rgba(0, 0, 0, 0.7)
+
+  #contact-btn
+    background: rgba(0, 0, 0, 0.85)
+    color: #EEE
+    font-size: 14pt
+    padding: 3px 17px 5px 17px
+    border-radius: 15px
+
+    @media screen and (max-width: $notebook-breakpoint)
+      font-size: 16pt
+      padding: 4px 17px 6px 17px
+
+  #contact-btn:hover
+    background: black
+
+  #menu-toggle
+    display: none
+    height: 14px
+    cursor: pointer
+
+    @media screen and (max-width: $notebook-breakpoint)
+      display: flex
+
+    .bars
+      background: #222
+      height: 1px
+      width: 28px
+
+  #nav-links
+    @media screen and (max-width: $notebook-breakpoint)
+      padding: 0
+      position: absolute
+      top: 80px
+      left: 0
+      height: calc(100vh - 80px)
+      width: 100%
+      background: rgba(255, 255, 255, 0.95)
+
+    .links
+      @media screen and (max-width: $notebook-breakpoint)
+        flex-direction: column
+        width: 100%
+        height: 100%
+        margin: 0
+        padding: 100px 0
+
+    .links li
+      margin: 0 20px
+
+    .external-links
+      display: none
+      padding: 0
+      height: 150px
+      padding-bottom: 50px
+      @media screen and (max-width: $notebook-breakpoint)
+        display: flex
+      li
+        font-size: 21pt
+        padding: 0 10px
+        color: rgba(0, 0, 0, 0.9)
+
+        i
+          color: rgba(0, 0, 0, 0.85)
+
+        i:hover
+          transform: translateY(-3px)
+          color: rgba(0, 0, 0, 1)
+
+    .nav-link
+      font-size: 16pt
+      padding: 5px 15px
+      position: relative
+      color: rgba(0, 0, 0, 0.8)
+
+      @media screen and (max-width: $notebook-breakpoint)
+        font-size: 18pt
+
+    .nav-link:hover
+      color: rgba(0, 0, 0, 1)
+      background: rgba(255, 255, 255, 0.1)
+      border-radius: 50px

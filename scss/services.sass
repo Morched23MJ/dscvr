@@ -1,0 +1,26 @@
+@import "useful-classes"
+#services
+  background: #FAFAFA
+  .wrapper
+    align-items: flex-start
+    .service
+      .s-wrapper
+        background-color: rgba(236, 236, 236, 0.7)
+        width: 50%
+        padding: 150px 100px
+        @media screen and (max-width: $notebook-breakpoint)
+          width: 65%
+        @media screen and (max-width: $tablet-breakpoint)
+          width: 80%
+        @media screen and (max-width: $phone-lg-breakpoint)
+          width: 100%
+          padding: 150px 50px
+        h1
+          font-size: 30pt
+          @media screen and (max-width: $phone-lg-breakpoint)
+            font-size: 26pt
+        p
+          font-size: 13pt
+          font-weight: 300
+          @media screen and (max-width: $phone-lg-breakpoint)
+            font-size: 12pt

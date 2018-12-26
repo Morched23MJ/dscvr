@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext,cyrillic-ext,cyrillic,greek-ext,greek,vietnamese);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,latin-ext,greek-ext,greek,vietnamese,cyrillic,cyrillic-ext);
+.h-flex, .v-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.v-flex {
+  flex-direction: column; }
+
+.fake-link {
+  text-decoration: none;
+  color: black; }
+
+.fake-list {
+  list-style: none; }
+
+footer {
+  background: #EEE;
+  padding: 20px 5%;
+  box-sizing: border-box;
+  width: 100%;
+  align-items: center; }
+  footer #copyright {
+    font-size: 15pt;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.95);
+    align-self: flex-start; }
+    @media screen and (max-width: 768px) {
+      footer #copyright {
+        align-self: center; } }
+  footer #f-wrapper {
+    width: 100%;
+    font-size: 15pt; }
+    @media screen and (max-width: 768px) {
+      footer #f-wrapper {
+        flex-direction: column;
+        align-items: center; } }
+    footer #f-wrapper ul {
+      padding: 0; }
+      footer #f-wrapper ul li {
+        margin: 3px 0; }
+    footer #f-wrapper .bottom-links {
+      height: 100%;
+      width: 50%;
+      align-items: flex-start; }
+      @media screen and (max-width: 768px) {
+        footer #f-wrapper .bottom-links {
+          align-items: center;
+          font-size: 16pt; } }
+      footer #f-wrapper .bottom-links ul a {
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.5); }
+      footer #f-wrapper .bottom-links ul a:hover {
+        color: rgba(0, 0, 0, 0.85); }
+    footer #f-wrapper .social-media {
+      justify-content: flex-start;
+      height: 100%;
+      width: 50%; }
+      footer #f-wrapper .social-media p {
+        font-size: 16pt; }
+        @media screen and (max-width: 768px) {
+          footer #f-wrapper .social-media p {
+            display: none; } }
+      footer #f-wrapper .social-media ul i {
+        font-size: 21pt;
+        color: rgba(0, 0, 0, 0.9);
+        padding: 2px 7px; }
+      footer #f-wrapper .social-media ul i:hover {
+        transform: translateY(-3px);
+        color: black; }
+
+/*# sourceMappingURL=footer.css.map */

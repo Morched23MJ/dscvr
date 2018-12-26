@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext,cyrillic-ext,cyrillic,greek-ext,greek,vietnamese);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,latin-ext,greek-ext,greek,vietnamese,cyrillic,cyrillic-ext);
+.h-flex, .v-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.v-flex {
+  flex-direction: column; }
+
+.fake-link {
+  text-decoration: none;
+  color: black; }
+
+.fake-list {
+  list-style: none; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #FAFAFA;
+  font-family: Roboto, sans-serif;
+  height: 3000px; }
+
+* {
+  box-sizing: border-box;
+  transition: all ease-in-out 0.4s;
+  font-weight: 100; }
+
+::-webkit-scrollbar {
+  width: 8px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #202020; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(239, 239, 239, 0.9); }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(239, 239, 239, 0.75); }
+
+/*# sourceMappingURL=style.css.map */

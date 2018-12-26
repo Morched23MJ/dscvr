@@ -1,0 +1,69 @@
+@import useful-classes
+
+footer
+  background: #EEE
+  padding: 20px 5%
+  box-sizing: border-box
+  width: 100%
+  align-items: center
+
+  #copyright
+    font-size: 15pt
+    font-weight: 300
+    color: rgba(0, 0, 0, 0.95)
+    align-self: flex-start
+
+    @media screen and (max-width: $tablet-breakpoint)
+      align-self: center
+
+  #f-wrapper
+    width: 100%
+    font-size: 15pt
+
+    @media screen and (max-width: $tablet-breakpoint)
+      flex-direction: column
+      align-items: center
+
+    ul
+      padding: 0
+
+      li
+        margin: 3px 0
+
+    .bottom-links
+      height: 100%
+      width: 50%
+      align-items: flex-start
+
+      @media screen and (max-width: $tablet-breakpoint)
+        align-items: center
+        font-size: 16pt
+
+      ul
+        a
+          font-weight: 300
+          color: rgba(0, 0, 0, 0.5)
+
+        a:hover
+          color: rgba(0, 0, 0, 0.85)
+
+    .social-media
+      justify-content: flex-start
+      height: 100%
+      width: 50%
+
+      p
+        font-size: 16pt
+
+        @media screen and (max-width: $tablet-breakpoint)
+          display: none
+
+      ul
+        i
+          font-size: 21pt
+          color: rgba(0, 0, 0, 0.9)
+          padding: 2px 7px
+
+        i:hover
+          transform: translateY(-3px)
+          color: rgba(0, 0, 0, 1)
